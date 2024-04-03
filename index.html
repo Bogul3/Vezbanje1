@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" style="display: flex; flex-direction: row; width: 90%;" >
+        <div id="levo" style="width: 50%;">
+            <label for="ocena">Ocena: </label>          <input type="text" id="ocena">
+            <p id="ocenaGreska"></p><br>
+            <label for="indeks">Broj Indeksa: </label>  <input type="text" id="indeks">
+            <p id="indeksGreska"></p><br>
+            <label for="rbIzlaska">Redni Broj Izlaska na ispit: </label>  <select id="rbIzlaska">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            <p id="rbGreska"></p><br>
+        </div>
+        <div id="desno" style="width: 50%;">
+            <label for="datum">Datum Izlaska na ispit: </label> <input type="date" id="datum">
+            <p id="datumGreska"></p><br>
+            <label>Rok: </label>
+                <input type="radio" name="rok" id="jan">    <label for="jan">Januar</label>
+                <input type="radio" name="rok" id="apr">    <label for="apr">April</label>        
+                <input type="radio" name="rok" id="jun">    <label for="jun">Jun</label>          
+                <input type="radio" name="rok" id="sep">    <label for="sep">Septembar</label>
+            <p id="rokGreska"></p><br>
+            <label for="polozio">Polozio: </label><input type="checkbox" id="polozio">
+            <br>
+            <button style="width: 80%;">Posalji</button>
+        </div>
+           
+    </form>
+</body>
+</html>
