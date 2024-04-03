@@ -9,7 +9,7 @@
     <form action="" style="display: flex; flex-direction: row; width: 90%;" >
         <div id="levo" style="width: 50%;">
             <label for="ocena">Ocena: </label>          <input type="text" id="ocena">
-            <p id="ocenaGreska"></p><br>
+            <p id="ocenaGreska" style="color: red;"></p><br>
             <label for="indeks">Broj Indeksa: </label>  <input type="text" id="indeks">
             <p id="indeksGreska"></p><br>
             <label for="rbIzlaska">Redni Broj Izlaska na ispit: </label>  <select id="rbIzlaska">
@@ -24,16 +24,16 @@
             <label for="datum">Datum Izlaska na ispit: </label> <input type="date" id="datum">
             <p id="datumGreska"></p><br>
             <label>Rok: </label>
-                <input type="radio" name="rok" id="jan">    <label for="jan">Januar</label>
-                <input type="radio" name="rok" id="apr">    <label for="apr">April</label>        
-                <input type="radio" name="rok" id="jun">    <label for="jun">Jun</label>          
-                <input type="radio" name="rok" id="sep">    <label for="sep">Septembar</label>
+                <input type="radio" name="rok" id="jan" value="jan">    <label for="jan">Januar</label>
+                <input type="radio" name="rok" id="apr" value="apr">    <label for="apr">April</label>        
+                <input type="radio" name="rok" id="jun" value="jun">    <label for="jun">Jun</label>          
+                <input type="radio" name="rok" id="sep" value="sep">    <label for="sep">Septembar</label>
             <p id="rokGreska"></p><br>
             <label for="polozio">Polozio: </label><input type="checkbox" id="polozio">
             <br>
-            <button style="width: 80%;">Posalji</button>
+            <button style="width: 80%;" id="btnSubmit" type="button">Posalji</button>
         </div>
-           
     </form>
+    <script src="index.js"></script>
 </body>
 </html>
